@@ -95,6 +95,12 @@ body.dark .custom-shape-divider-bottom-1650540296 .shape-fill {
 body.dark footer .logo{
   color: #A3A64E;
 }
+body.dark .imgday{
+  display: none;
+}
+body.dark .imgdark{
+  display: block;
+}
 /* --------------- General Styles --------------- */
 
 *,
@@ -410,6 +416,9 @@ body.open .hamburguer .bar:last-child{
 .paral-night{
   display: none;
 }
+.imgdark{
+  display: none;
+}
 
 .showcase-area{
   padding: 120px 0;
@@ -418,6 +427,8 @@ body.open .hamburguer .bar:last-child{
   position: relative;
   background-image:url(../assets/5243451.jpg);
   background-attachment: fixed;
+  background-size: 180%;
+  background-repeat: no-repeat;
 }
 .showcase-area .container{
   display: grid;
@@ -1025,6 +1036,8 @@ justify-content: center;
 }
 .testimonials-title{
   padding-left: 5rem;
+  align-self: flex-start;
+  margin-top: 4rem;
 
 }
 .testimonials-title >* {
@@ -1062,8 +1075,13 @@ justify-content: center;
   top: 15%;
   transform: translate(-50%,-50% );
 }
-
-
+.testimonial-image{
+  justify-self: flex-end;
+  width: 400px;
+  grid-column: 2/3;
+  position: absolute;
+  transform: translateY(50%);
+}
 
 /* --------------- Contact Section Styling --------------- */
 
@@ -1403,9 +1421,11 @@ body.open header.scrolled{
 .body.open .links{
   opacity: 1;
 }
+.showcase-area{
+  background-size: auto;
+}
 .showcase-area .container{
   grid-template-columns: 1fr;
-  height: revert;
   justify-items: center;
   row-gap: 4rem;
 }
@@ -1539,6 +1559,10 @@ body.open header.scrolled{
   text-align: center;
   padding: 0 0 3rem 0;
 }
+.testimonial-image{
+  display: none;
+}
+
 .swiper-slide{
   padding: 0 2rem;
 }
