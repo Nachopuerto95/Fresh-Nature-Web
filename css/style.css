@@ -73,7 +73,7 @@ body.dark .form-input:hover{
   filter: brightness(110%);
 }
 body.dark .showcase-area{
-  background-image: url(../assets/Black_and_White_Watercolor_Background.jpg);
+  background-image: url(../assets/Black_and_White_Watercolor_Background.webp);
   background-position: top;
 }
 body.dark .paral-night{
@@ -425,7 +425,7 @@ body.open .hamburguer .bar:last-child{
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image:url(../assets/5243451.jpg);
+  background-image:url(../assets/5243451.webp);
   background-attachment: fixed;
   background-size: 180%;
   background-repeat: no-repeat;
